@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    background-color: #efdfdd;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    /* border: 3px solid black; */
+    /* border-radius: 25px; */
+
+    
+}
+
+.mug{
+    width: 40%;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+    
+}
+.textContent{
+    background-color: white;
+    color: black;
+    /* width: 80%; */
+    height: 100%;
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+h3, h2, .coffeDesc, .price, .cart{
+    margin: 0rem 1.8rem;
+    padding: 0.2rem 0;
+}
+.price{
+    color: green;
+    font-size: 2.5rem;
+}
+s{
+    font-size: 1rem;
+    color: black;
+}
+h3{
+    color: rgba(136, 136, 136, 1);
+    font-size: 1.8rem;
+}
+.coffeDesc{
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+}
+h2{
+    font-size: 2rem;
+}
+
+
+.cart{
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    gap: 15px;
+    font-size: 1.3rem;
+    color: white;
+}
+.cartImage{
+    width: 5%;
+    height: 80%;
+}
