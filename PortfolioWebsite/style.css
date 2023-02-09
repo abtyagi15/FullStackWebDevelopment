@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 :root{
-    --bg0range: #e84949;
+    --bgOrange: #e84949;
 }
 #wrapper{
     height: 100vh;
@@ -106,7 +106,7 @@ a{
     font-weight: 500;
 }
 .btn-pink{
-    background-color: var(--bg0range);
+    background-color: var(--bgOrange);
     width: fit-content;
     color: white;
     padding: 0.8rem 2.3rem;
@@ -140,7 +140,7 @@ a{
 }
 .btn-pink:hover{
     color: black;
-    border: 3px solid var(--bg0range);
+    border: 3px solid var(--bgOrange);
 }
 .hero-section-right{
     position: relative;
@@ -250,7 +250,7 @@ a{
     margin-top: 4rem;
 }
 .page-header{
-    color: var(--bg0range);
+    color: var(--bgOrange);
     font-size: 90px;
     text-align: center;
     padding-top: 30px;
@@ -267,6 +267,7 @@ a{
 .project-card{
     width: 90%;
     height: 550px;
+    box-shadow: 0px 0px 40px #1f1f1f;
     background-image: url('./images/projects/Project2.png');
     background-size: cover;
     position: relative;
@@ -325,26 +326,152 @@ a{
     position: absolute;
     display: flex;
     flex-direction: column;
+    color: white;
+    width: 65%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+    left: 10rem;
+    z-index: 10;
+    transition: all 0.4s linear;
+}
+.project-card:hover .project-content{
+    
+    transform: scale(1.1);
 }
 .project-skills-container{
+    width: 60%;
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-    width: fit-content;
+
     
 }
 .project-skill{
-    
+    width: 40px;    
 }
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.project-sub-heading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+.btn-grp{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.btn-project:hover{
+    border: none;
+}
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+.icon:hover{
+    color: var(--bgOrange);
 
+}
 #project1{
+    margin-left: 120px;
     background-image: url('./images/projects/Project1.png');
+    /* width: 100%; */
 }
 #project2{
     background-image: url('./images/projects/Project2.png');
+    /* width: 100%; */
 }
 #project3{
+    margin-left: 120px;
     background-image: url('./images/projects/Project3.png');
+    /* width: 100%; */
 }
 #project4{
     background-image: url('./images/projects/Project4.png');
+    /* width: 100%; */
+}
+.skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
+.skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.skill-container-right{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+}
+.skill-fade-text{
+    position: absolute;
+    right: -25%;
+    bottom: -35%;
+    font-size: 15em;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+    user-select: none;
+}
+.blob-style{
+    position: absolute;
+    align-self: center;
+    transform: translateX(0) translateY(0);
+    animation: blobAnimate 1.5s linear infinite;
+    z-index: -2;
+}
+@keyframes blobAnimate {
+
+    0%{
+        transform: translateX(0) translateY(0); 
+    }
+    50%{
+        transform: translateX(-10px) translateY(10px);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+    
+}
+.skills-logo{
+    width: 90px;
+    transition: all 0.5s;
+}
+.skills-logo:hover{
+    transform: scale(1.2);
+}
+.skill-heading{
+    position: relative;
+    z-index: -9;
+    color: var(--bgOrange);
+    line-height: 50px;
+    font-size: 40px;
+}
+.caps{
+    font-size: 60px;
+}
+.skill-subHeading{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+}
+.skill-subHeading p{
+    margin: 10px 0;
+}
+.contactus-form-container{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
 }
