@@ -541,6 +541,7 @@ a{
 footer{
     background: #343d68;
     padding: 5rem;
+    position: relative;
 }
 .footer-wrapper{
     padding: 1.2rem;
