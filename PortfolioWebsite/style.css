@@ -531,12 +531,44 @@ a{
     gap: 30px;
     width: 70%;
     margin: 2rem 10rem;
-    
-
-}
+ }
 
 .contactus-form-container{
     margin-top: 25px;
     display: flex;
     
+}
+footer{
+    background: #343d68;
+    padding: 5rem;
+}
+.footer-wrapper{
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-faded-text{
+    font-size: 5em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #535c87;
+    user-select: none;
+}
+.link-wrapper{
+    display: flex;
+    
+}
+.link-wrapper a{
+    color: white;
+    text-decoration: none;
+    margin: 2rem 1rem;
+}
+.icon-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.link-wrapper :hover,.icon-wrapper :hover{
+    color: var(--bgOrange);
 }
