@@ -573,3 +573,6 @@ footer{
 .link-wrapper :hover,.icon-wrapper :hover{
     color: var(--bgOrange);
 }
+@media (max-width: 1000px){
+    
+}
