@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    height: 100vh;
+
+}
+.container{
+    margin: auto;
+    width: 1000px;
+}
+svg{
+    width: 10%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.header a{
+    color: grey;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    height: 100%;  
+}
+
+.search:hover input{
+    height: 100%;
+    opacity: 100%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "world1 design1"
+    "world2 design2"
+    "world3 design3";
+    grid-gap: 0.4rem;
+    
+}
+#world1{
+    grid-area: world1;
+}
+#world2{
+    grid-area: world2;
+}
+#world3{
+    grid-area: world3;
+}
+#design1{
+    grid-area: design1;
+}
+#design2{
+    grid-area: design2;
+}
+#design3{
+    grid-area: design3;
+}
+p,h2{
+    padding: 0.2rem 0;
+}
+.card a{
+    position: absolute;
+    bottom: 1rem;
+    color: blue;
+    font-weight: bold;
+    
+}
+.card{
+    position: relative;
+    border: 3px solid grey;
+    padding: 1rem;    
+}
+.caption{
+    margin-bottom: 3rem ;
+}
+.nov{
+    
+    color: grey;
+}
+.design{
+    color: green;
+    font-weight: bold;
+}
+.world{
+    color: blue;
+    font-weight: bold;
+}
