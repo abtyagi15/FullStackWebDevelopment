@@ -1,0 +1,78 @@
+<!-- https://codehelp-share-modal.netlify.app/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="wrapper"
+      class="w-[100vw] h-[100vh] flex items-center justify-center bg-black z-0"
+    >
+      <div class="circle1 fixed left-[34%] top-[12%] z-10"></div>
+      <div class="circle2 fixed right-[33%] top-[50%] z-10"></div>
+      <div
+        class="card backdrop-blur-lg bg-[#ffffff1a] z-20 flex flex-col items-center justify-evenly border-2 border-[#ffffff30] p-12 text-white gap-9"
+      >
+        <img
+          src="./assests/profile-image.webp"
+          class="broder-2 border-[#ffffff30] w-[50%] h-[50%] rounded-full"
+        />
+        <div class="text-[2rem]">Love Babber</div>
+        <div class="text-[#ffffff85]">Founder, CodeHelp</div>
+        <div class="text-[#ffffffb9]">
+          <button onclick="openModal()"
+            class="button1 rounded-sm border-2 border-[#ffffffb9] mr-2 px-[11px] py-[6px] hover:bg-[#ffffffb9] hover:text-[#131313] duration-[0.5s]"
+          >
+            <i class="fa-solid fa-share"></i>
+            <span>Share My Profile</span>
+          </button>
+          <button
+            class="button2 border-[#ffffffb9] border-2 rounded-[4px] px-[11px] py-[6px] hover:bg-[#ffffffb9] hover:text-[#131313] duration-[0.5s]"
+          >
+            Follow Me
+          </button>
+        </div>
+      </div>
+      <div class="modal rounded-md z-30 text-white absolute border-white border-2 py-7 px-12 z-30 bg-black opacity-[0.92222] scale-0">
+        <div class="flex gap-3 items-center justify-between text-[2em]"><span>Share My Profile </span> 
+          <i class="close-mark fa-solid fa-xmark cursor-pointer" onclick="closeModal()"></i>
+        </div>
+        <hr class="bg-white my-2">
+        <div class="mt-5 mb-3 text-[1.5em]">Share this via</div>
+        <div class="icon-container mt-7 flex justify-between gap-9">
+          <a href="#" class="icon border border-[#1771e6] rounded-[100%]  p-5"  id="facebook">
+            <i class="fa-brands fa-facebook-f text-[#1771e6] scale-[1.8]"></i>
+          </a>
+          <a href="#" class="icon border border-[#1c99e6] rounded-[100%]  p-5 " id="twitter">
+            <i class="fa-brands fa-twitter text-[#1c99e6] scale-[1.8]"></i>
+          </a>
+          <a href="#" class="icon border border-[#cb2770] rounded-[100%] p-5" id="instagram">
+            <i class="fa-brands fa-instagram text-[#cb2770] scale-[1.8]"></i>
+          </a>
+          <a href="#" class="icon border border-[#2fe664] rounded-[100%]  p-5" id="whatsapp">
+            <i class="fa-brands fa-whatsapp text-[#2fe664] scale-[1.8]"></i>
+          </a>
+          <a href="#" class="icon border border-[#0081c2] rounded-[100%]  p-5" id="telegram">
+            <i class="fa-brands fa-telegram text-[#0081c2] scale-[1.8]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4c39e4ce76.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
