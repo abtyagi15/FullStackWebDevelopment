@@ -65,6 +65,11 @@
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
+    cursor: pointer;
+}
+.btn.active{
+    display: flex;
 }
 .win{
     background-color: green;
