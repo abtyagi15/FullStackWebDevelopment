@@ -1,0 +1,15 @@
+.product-date{
+    background-color: black;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.4rem;
+}
+.product-date_day{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-date_year{
+    font-size: 12px;
+}
