@@ -1,0 +1,87 @@
+<!-- https://codehelp-devdetective.netlify.app/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dev Detective</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <div class="logo">DevDetective</div>
+        <div class="mode">
+          <p>DARK</p>
+          <img src="./images/moon-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="search-bar">
+            <img src="./images/search-icon.svg" alt="" />
+            <input
+              type="search"
+              name="user-input"
+              class="search"
+              id="input"
+              placeholder="Enter a github username...."
+              required
+            />
+            <p id="error">No such result</p>
+            <button class="btn-search">Search</button>
+      </div>
+      <div class="profile-container">
+        <div class="profile-header">
+          <img src="./images/profile-image.jpg" alt="" class="profile-image" width = "150px" />
+          <div class="profile-info-wrapper">
+            <div class="profile-name">
+              <h2 id="name">Pranay Gupta</h2>
+              <a href="#" target="_blank" id="user">@thepranaygupta</a>
+            </div>
+            <p id="date">Joined 05 May 2020</p>
+          </div>
+        </div>
+        <p id="bio">Ex @permissionles, Ex @gumlet,
+          Frontend Developer at @we-frame,
+          Core Member at @aec-coding-club,
+          Technical Expert at @gsasansol</p>
+        <div class="profile-stats-wrapper">
+          <div class="profile-stat">
+            <p class="stat-title">Repos</p>
+            <p id="repos" class="stat-value">71</p>
+          </div>
+          <div class="profile-stat">
+            <p class="stat-title">Followers</p>
+            <p id="stat-value">476</p>
+          </div>
+          <div class="profile-stat">
+            <p class="stat-title">Following</p>
+            <p id="stat-value">138</p>
+          </div>
+        </div>
+        <div class="profile-bottom-wrapper">
+          <div class="profile-info">
+            <img src="./images/location-icon.svg" alt="" />
+            <p id="location">Kolkata, India</p>
+          </div>
+          <div class="profile-info">
+            <img src="./images/website-icon.svg" alt="" />
+            <p id="website">https://thepranaygupta.github.io</p>
+          </div>
+          <div class="profile-info">
+            <img src="./images/twitter-icon.svg" alt="" />
+            <p id="twitter">thepranaygupta</p>
+          </div>
+          <div class="profile-info">
+            <img src="./images/company-icon.svg" alt="" />
+            <p id="company">@TargetTechnology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
