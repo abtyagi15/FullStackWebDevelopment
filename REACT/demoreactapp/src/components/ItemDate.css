@@ -1,0 +1,7 @@
+.item-date{
+    background-color: aqua;
+    text-align: center;
+}
+.item-date span{
+    margin: 0 3px;
+}
