@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (min-width: 768px){
+    .image-container{
+        position: absolute;
+        top: -7rem;
+    }
+    /* .image{
+        position: absolute;
+        
+    } */
+    .image-shadow{
+        position: absolute;
+        top: -5%;
+        right: -7%;
+    }
+}
+@media (max-width: 768px){
+    .image-container{
+        margin: 0 auto;
+        position: relative;
+    }
+    .image-shadow{
+        position: absolute;
+
+    }
+}
