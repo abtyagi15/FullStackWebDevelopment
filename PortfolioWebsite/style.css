@@ -32,6 +32,10 @@
     align-items: center;
     justify-content: baseline;
     position: relative;
+    color: #4e45d5;
+    font-size: large;
+    font-weight: bold;
+    cursor:pointer;
 }
 
 .logo-text{
