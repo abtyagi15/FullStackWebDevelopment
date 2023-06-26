@@ -13,4 +13,4 @@ require('./config/database').dbConnect();
 const user = require('./routes/user.js');
 app.use("/api/v1",user);
 
-app.listen(PORT,() => console.log("Server connected successfully, PORT : "+PORT))
+app.listen(PORT,() => console.log("Server connected successfully, PORT : "+PORT));
